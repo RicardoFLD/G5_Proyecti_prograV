@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ComicsModelStoreContainer" CdmEntityContainer="ComicsEntities">
+    <FunctionImportMapping FunctionImportName="AgregarProducto" FunctionName="ComicsModel.Store.AgregarProducto" />
+    <FunctionImportMapping FunctionImportName="EditarProducto" FunctionName="ComicsModel.Store.EditarProducto" />
+    <FunctionImportMapping FunctionImportName="EliminarProducto" FunctionName="ComicsModel.Store.EliminarProducto" />
+    <FunctionImportMapping FunctionImportName="MostrarProductos" FunctionName="ComicsModel.Store.MostrarProductos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ComicsModel.MostrarProductos_Result">
+          <ScalarProperty Name="idProducto" ColumnName="idProducto" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="cantidadEnStock" ColumnName="cantidadEnStock" />
+          <ScalarProperty Name="idProveedor" ColumnName="idProveedor" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
